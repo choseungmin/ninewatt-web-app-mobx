@@ -4,7 +4,7 @@ import { Provider } from 'mobx-react';
 import { createBrowserHistory } from 'history';
 import { TodoModel } from './app/models';
 import { createStores } from './app/stores';
-import { App } from './app';
+import { App } from 'app/App';
 
 // default fixtures for TodoStore
 const defaultTodos = [
