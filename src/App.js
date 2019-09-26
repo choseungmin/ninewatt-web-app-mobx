@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Counter from './app/superMarket/container/Counter';
 import SuperMarket from './app/superMarket/container/SuperMarket';
 import SuperMarketContainer from './app/superMarket/SuperMarketContainer'
-import DevTools from 'mobx-react-devtools';
+import Routes from "./routes";
+import {Provider} from "mobx-react";
+import RootStore from "./app/stores";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <SuperMarketContainer/>
-      </div>
-    );
-  }
-}
+const root = new RootStore(); // *** 루트 스토어 생성
 
-export default App;
+export default () => (
+  <BrowserRouter>
+    <Routes/>
+  </BrowserRouter>
+)
