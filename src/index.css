@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.ShopItem {
+  background: white;
+  border: 1px solid #495057;
+  padding: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ShopItem h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.ShopItem:hover {
+  background: #495057;
+  color: white;
+}
+
+.ShopItem+.ShopItem {
+  margin-top: 1rem;
+}
+
+.SuperMarketTemplate {
+  width: 768px;
+  display: flex;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.SuperMarketTemplate h2 {
+  margin-top: 0;
+}
+
+.SuperMarketTemplate>div {
+  padding: 1rem;
+  flex: 1;
+}
+
+.SuperMarketTemplate .items-wrapper {
+  background: #f8f9fa;
+}
+
+.BasketItem {
+  display: flex;
+  width: 100%;
+}
+
+.BasketItem .name {
+  flex: 2;
+}
+
+.BasketItem .price {
+  flex: 1;
+}
+
+.BasketItem .count {
+  flex: 1;
+}
+
+.BasketItem .return {
+  margin-left: auto;
+  color: #f06595;
+  cursor: pointer;
+}
+
+.BasketItem .return:hover {
+  text-decoration: underline;
+}
+
+.BasketItem+.BasketItem {
+  margin-top: 1rem;
+}
