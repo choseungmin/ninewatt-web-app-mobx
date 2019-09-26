@@ -39,7 +39,7 @@ function build({ devOptions = {} }, env) {
         disable: !isProduction
       }),
       new HtmlWebpackPlugin({
-        template: 'assets/index.html'
+        template: 'app/assets/index.html'
       }),
       // new webpack.HotModuleReplacementPlugin()
     ],

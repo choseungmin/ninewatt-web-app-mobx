@@ -1,8 +1,8 @@
 import React from 'react';
-import SuperMarketTemplate from './SuperMarketTemplate';
-import ShopItemList from './ShopItemList';
-import BasketItemList from './BasketItemList';
-import TotalPrice from './TotalPrice';
+import SuperMarketTemplate from '../view/SuperMarketTemplate';
+import ShopItemList from '../view/ShopItemList';
+import BasketItemList from '../view/BasketItemList';
+import TotalPrice from '../view/TotalPrice';
 
 const SuperMarket = () => {
   return (
